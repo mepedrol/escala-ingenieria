@@ -183,12 +183,6 @@ section{position:relative}
 .about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:70px;align-items:center}
 .about-img{position:relative}
 .about-img image-slot{width:100%;height:560px}
-.about-img .badge{
-  position:absolute;left:-34px;bottom:-34px;background:var(--ink);color:var(--cream);
-  padding:30px 34px;width:230px;border:1px solid var(--line);
-}
-.about-img .badge .bn{font-family:var(--serif);font-size:46px;line-height:1;color:var(--gold)}
-.about-img .badge .bl{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mut-light);margin-top:10px;line-height:1.5}
 .about-copy h2{margin:24px 0 28px}
 .about-copy p{font-size:15.5px;line-height:1.8;color:#4a4338;margin-bottom:22px}
 .values{display:flex;flex-direction:column;margin-top:36px;border-top:1px solid var(--line-dark)}
@@ -351,7 +345,6 @@ footer{background:var(--ink);padding:80px 0 36px}
   .about-grid,.contact-grid{grid-template-columns:1fr;gap:48px}
   .tst-cards{grid-template-columns:1fr}
   .tlogos{grid-template-columns:1fr 1fr}
-  .about-img .badge{left:auto;right:24px;bottom:-28px}
   .stats{grid-template-columns:1fr 1fr}
   .stat{border-bottom:1px solid var(--line-dark)}
   .sec-head{grid-template-columns:1fr;gap:20px}
@@ -450,10 +443,6 @@ footer{background:var(--ink);padding:80px 0 36px}
     <div class="about-grid">
       <div class="about-img rv">
         <img class="about-photo" src="assets/reja-atardecer.jpg" alt="Reja metálica sobre muro de concreto al atardecer" style="width:100%;height:560px;object-fit:cover;display:block" />
-        <div class="badge">
-          <div class="bn">ISO</div>
-          <div class="bl" data-i18n="about_badge">Estándares de calidad y seguridad certificados</div>
-        </div>
       </div>
       <div class="about-copy rv rv-d1">
         <span class="eyebrow" data-i18n="about_eyebrow">Nuestra historia</span>
@@ -641,7 +630,6 @@ const I18N={
     about_eyebrow:"Our story",about_title:"Engineering with roots, a vision for the future",
     about_p1:"Escala Ingeniería was born from a simple conviction: every build must stand the test of time as much as it stands on the trust of those who inhabit it. What began as a small engineering workshop is today a construction firm known for its technical rigor and attention to detail.",
     about_p2:"We combine the discipline of engineering with the sensibility of design. Each of the four symbols in our brand represents a pillar: structure, orientation, growth and home.",
-    about_badge:"Certified quality and safety standards",
     val1_t:"Structure",val1_d:"Calculation and construction that never compromise on safety.",
     val2_t:"Orientation",val2_d:"Technical guidance from start to finish on every build.",
     val3_t:"Growth",val3_d:"Sustainable solutions that respect their surroundings.",
